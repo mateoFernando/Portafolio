@@ -1,0 +1,27 @@
+//
+//  DetailView.swift
+//  H4X0R News
+//
+//  Created by Fernando Daniel on 15/04/22.
+//
+
+import SwiftUI
+
+struct DetailView: View {
+    let url: String?
+
+    var body: some View {
+        WebView(urlString: url)
+    }
+}
+
+struct DetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        DetailView(url: "https://www.google.com")
+    }
+}
+
+/*
+ Importamos WebKit para usar UIWebView y el UIViewRepresentable nos permite crear a swift ui que representa a uikit view
+ */
+
